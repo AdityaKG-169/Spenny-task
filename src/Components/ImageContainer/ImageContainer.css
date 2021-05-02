@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=ImageContainer.css.map */
+.images__container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/*# sourceMappingURL=ImageContainer.css.map */

@@ -7,13 +7,11 @@ const SearchBox = () => {
 	const dispatch = useDispatch();
 
 	return (
-		<div>
-			<input
-				type="text"
-				placeholder="🔍 Search free high resolution photos"
-				onChange={(e) => dispatch(editSearchText(e.target.value))}
-			/>
-		</div>
+		<input
+			type="text"
+			placeholder="🔍 Search free high resolution photos"
+			onChange={(e) => dispatch(editSearchText(e.target.value))}
+		/>
 	);
 };
 
