@@ -5,7 +5,7 @@ export const editSearchText = (text) => {
 	};
 };
 
-export const exitPageNumber = (number) => {
+export const editPageNumber = (number) => {
 	return {
 		type: "EDIT_PAGE_NUMBER",
 		payload: number,

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import SearchBox from "../../Components/SearchBox/SearchBox";
-import { addImages } from "../../Actions";
+import { addImages, editPageNumber } from "../../Actions";
 import ImageContainer from "../../Components/ImageContainer/ImageContainer";
 import "./HomePage.css";
 
@@ -11,6 +11,8 @@ const HomePage = () => {
 	const searchText = useSelector((state) => state.searchTextReducer);
 
 	useEffect(() => {
+		dispatch(editPageNumber(1));
+
 		let cancel;
 		axios({
 			method: "GET",
