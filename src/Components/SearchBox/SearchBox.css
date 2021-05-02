@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=SearchBox.css.map */
+input {
+  width: 70%;
+  padding: 10px 20px;
+  border-radius: 2em;
+  border: 1px solid #bebebe;
+  background-color: whitesmoke;
+  font-size: 1em;
+  margin: 20px 0 40px 0;
+  outline: none;
+}
+/*# sourceMappingURL=SearchBox.css.map */

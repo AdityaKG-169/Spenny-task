@@ -6,8 +6,7 @@ const ImageContainer = () => {
 	const images = useSelector((state) => state.imagesReducer);
 
 	return (
-		<div>
-			{console.log(images)}
+		<div className="images__container">
 			{images ? (
 				images.map((i, j) => {
 					return (
@@ -19,7 +18,7 @@ const ImageContainer = () => {
 					);
 				})
 			) : (
-				<h1>Loading</h1>
+				<h1>⌛ Loading</h1>
 			)}
 		</div>
 	);
