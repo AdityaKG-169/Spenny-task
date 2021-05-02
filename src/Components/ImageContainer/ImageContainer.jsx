@@ -1,25 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import "./ImageContainer.css";
 
-const ImageContainer = () => {
-	const images = useSelector((state) => state.imagesReducer);
-
+const ImageContainer = ({ imageLink, imageText }) => {
 	return (
-		<div className="images__container">
-			{images ? (
-				images.map((i, j) => {
-					return (
-						<img
-							src={`https://farm${i.farm}.staticflickr.com/${i.server}/${i.id}_${i.secret}.jpg`}
-							key={j}
-							alt={i.title}
-						/>
-					);
-				})
-			) : (
-				<h1>⌛ Loading</h1>
-			)}
+		<div className="gallery-item">
+			<div className="image">
+				<img src={imageLink} alt={imageText} />
+			</div>
 		</div>
 	);
 };

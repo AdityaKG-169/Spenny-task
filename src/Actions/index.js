@@ -18,3 +18,10 @@ export const addImages = (imagesObject) => {
 		payload: imagesObject,
 	};
 };
+
+export const addMoreImages = (imagesObject) => {
+	return {
+		type: "ADD_MORE_IMAGES",
+		payload: imagesObject,
+	};
+};

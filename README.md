@@ -15,3 +15,5 @@ REACT_APP_IMAGE_KEY = apiKeyGoesHere
 ## Start the server
 
 npm start
+
+###### This is a PWA. You can install it in your desktop or mobile
